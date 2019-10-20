@@ -9,6 +9,7 @@ html{
 }
 
 .container{
+  padding: 10px;
   background-color: lightgrey;
   width: 50%;
   margin: auto ;
