@@ -1,0 +1,160 @@
+#bigtrail {
+  fill: #7c7c7c;
+}
+
+#bigtrail:hover {
+  fill: blue;
+}
+
+.two {
+  fill: #10f6fc;
+}
+
+.traenke-border {
+  fill: #8c3e13;
+}
+
+.two:hover {
+  fill: blue;
+}
+
+#walzplatz {
+  fill: #845630;
+}
+
+#walzplatz:hover {
+  fill: blue;
+}
+
+#weide {
+  fill: #0ce84f;
+  stroke: #999;
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+}
+
+#weide:hover {
+  fill: blue;
+}
+
+#gate {
+  fill: #999;
+}
+
+#gate:hover {
+  fill: blue;
+}
+
+#sonnenplatz {
+  fill: #e5e53e;
+}
+
+#sonnenplatz:hover {
+  fill: blue;
+}
+
+.seven {
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+  fill: #e8cd2a;
+  stroke: #a3a3a3;
+}
+
+.seven:hover {
+  fill: blue;
+}
+
+#stroh {
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+  fill: #e8cd2a;
+  stroke: #a3a3a3;
+}
+
+#stroh:hover {
+  fill: blue;
+}
+
+#intBox {
+  fill: #6d5e1d;
+  stroke: #603b0f;
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+}
+
+#intBox:hover {
+  fill: blue;
+}
+
+#schattenplatz {
+  fill: #4a4a51;
+}
+
+#schattenplatz:hover {
+  fill: blue;
+}
+
+#reithalle {
+  fill: #efce70;
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+  stroke: #512803;
+}
+
+#reithalle:hover {
+  fill: blue;
+}
+
+#liegeplatz {
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+  stroke: #512803;
+  fill: #c18c52;
+}
+
+#liegeplatz:hover {
+  fill: green;
+}
+
+.thirteen {
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+  fill: #8c3e13;
+  stroke: #d3d3d3;
+}
+
+.thirteen:hover {
+  fill: blue;
+}
+
+svg {
+  height: 450px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+img{
+  height: 25px;
+  width: 25px;
+  padding-left: 10px;
+}
+
+.box a{
+  display: inline-flex;
+  padding: 20px;
+}
+
+#answer{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#titel{
+  font-weight: bold;
+  font-size: 30px;
+}
+#besch {
+  font-weight: bold;
+  font-size: 30px;
+  word-wrap: break-word;
+}
