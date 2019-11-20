@@ -16,3 +16,28 @@ html{
   margin-bottom: 80px;
   text-align: center;
 }
+
+.darstellung-titel{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.darstellung-text{
+  margin-left: 5px;
+  text-align: left;
+  width: 70%;
+  margin-right: 10%;
+  font-size: 21px;
+  word-wrap: break-word;
+}
+.darstellung-content img{
+  width: 15%;
+}
+.darstellung-content{
+  display: flex;
+  width: 100%;
+}
+
+.btn{
+  font-size:21px;
+}
