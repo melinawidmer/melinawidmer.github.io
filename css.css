@@ -39,5 +39,12 @@ html{
 }
 
 .btn{
+  display: inline-block;
   font-size:21px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: grey;
 }

@@ -166,12 +166,12 @@ function showanswers() {
 
   var htmlinjection = '<div class="box">';
   htmlinjection += '<';
-  htmlinjection += 'a href = "" >';
+  htmlinjection += 'a href = "" class="btn" style="margin-right:10px;">';
   htmlinjection += 'Weiter';
   htmlinjection += '</a>';
   htmlinjection += '<a href ="';
   htmlinjection += whereTo;
-  htmlinjection += '">';
+  htmlinjection += '" class="btn">';
   htmlinjection += 'Mehr </a></div>';
 
 

@@ -113,7 +113,7 @@
 }
 
 #liegeplatz:hover {
-  fill: green;
+  fill: blue;
 }
 
 .thirteen {
@@ -141,7 +141,6 @@ img{
 
 .box a{
   display: inline-flex;
-  padding: 20px;
 }
 
 #answer{
@@ -153,6 +152,7 @@ img{
   font-weight: bold;
   font-size: 30px;
 }
+
 #besch {
   font-weight: bold;
   font-size: 30px;
