@@ -10,7 +10,7 @@ var questionlist = [{
   beschreibung: "Endlich konnte ich meinen Durst löschen!"
 }, {
   id: "three",
-  question: "Wo kann ich mich genüsslich wältzen?",
+  question: "Wo kann ich mich genüsslich wälzen?",
   title: "Wälzplatz!",
   beschreibung: "Genau, das ist der Wälzplatz! Lass uns weitergehen!"
 }, {
