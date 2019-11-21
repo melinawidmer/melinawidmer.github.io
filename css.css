@@ -17,6 +17,14 @@ html{
   text-align: center;
 }
 
+#homeTitle{
+  font-size:35px;
+}
+
+#hometext{
+  font-size:18px;
+}
+
 .darstellung-titel{
   font-weight: bold;
   font-size: 35px;
