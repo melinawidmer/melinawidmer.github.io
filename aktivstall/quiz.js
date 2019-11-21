@@ -1,68 +1,68 @@
 var questionlist = [{
   id: "one",
-  question: "BigTrail?",
+  question: "Ich möchte mich im Aktivstall fortbewegen!",
   title: "BigTrail!",
-  beschreibung: ""
+  beschreibung: "Genau, das ist unser Big Trail!"
 }, {
   id: "two",
-  question: "Tränke?",
+  question: "Ich habe Durst, wohin muss ich nun gehen?",
   title: "Tränke!",
-  beschreibung: ""
+  beschreibung: "Endlich konnte ich meinen Durst löschen!"
 }, {
   id: "three",
-  question: "Wälzplatz?",
+  question: "Wo kann ich mich genüsslich wältzen?",
   title: "Wälzplatz!",
-  beschreibung: ""
+  beschreibung: "Genau, das ist der Wälzplatz! Lass uns weitergehen!"
 }, {
   id: "four",
-  question: "Weide?",
+  question: "Ich möchte mich richtig austoben und etwas Gras fressen, wohin soll ich gehen?",
   title: "Weide!",
-  beschreibung: ""
+  beschreibung: "Wow, die Weide!"
 }, {
   id: "five",
-  question: "Weidentor?",
+  question: "Wo ist der Eingang der Weide?",
   title: "Weidentor!",
-  beschreibung: ""
+  beschreibung: "Genau, hier ist das beliebte Tor!"
 }, {
   id: "six",
-  question: "Sonnenplatz?",
+  question: "Ich möchte etwas die frische Frühlingssonne geniessen!",
   title: "Sonnenplatz!",
-  beschreibung: ""
+  beschreibung: "Super, hier ist es schon viel wärmer!"
 }, {
   id: "seven",
-  question: "Heu?",
+  question: "Ich habe Hunger!",
   title: "Heu!",
-  beschreibung: ""
+  beschreibung: "Richtig, das sind unsere Raufutterautomaten!"
 }, {
   id: "eight",
-  question: "Stroh?",
+  question: "Ich möchte als Zusatz noch etwas Stroh fressen!",
   title: "Stroh!",
-  beschreibung: ""
+  beschreibung: "Genau, hier finde ich eine Strohraufe!"
 }, {
   id: "nine",
-  question: "Integrationsbox?",
+  question: "Ein neuer Freund ist bei uns im Stall angekommen, wo steht er wohl?",
   title: "Integrationsbox!",
-  beschreibung: ""
+  beschreibung: "Toll, so kann ich ihn näher betrachten!"
 }, {
   id: "ten",
-  question: "Schattenplatz?",
+  question: "Ich habe heiss, lass uns etwas in den Schatten gehen!",
   title: "Schattenplatz!",
-  beschreibung: ""
+  beschreibung: "Super gemacht, jetzt geht es mir schon sichtlich besser!"
 }, {
   id: "eleven",
-  question: "Reithalle?",
+  question: "Meine Besitzerin möchte mit mir eine Reitstunde besuchen, wohin soll sie mich bringen?",
   title: "Reithalle!",
-  beschreibung: ""
+  beschreibung: "Genau, hier ist unsere Reithalle."
 }, {
   id: "twelve",
-  question: "Liegeplatz?",
+  question: "Ich bin müde und möchte mich gerne etwas ausruhen, wohin soll ich mich bewegen?",
   title: "Liegeplatz!",
-  beschreibung: ""
+  beschreibung: "Toll, nun konnte ich mich richtig entspannen!"
 }, {
   id: "thirteen",
-  question: "Kraftfutter?",
+  question: "Ich habe Hunger und durch meine harte Arbeit, die ich heute geleistet habe brauche ich unbedingt Energie, wo soll ich hingehen?",
   title: "Kraftfutter!",
-  beschreibung: ""
+  beschreibung: "Richtig, dass sind unsere Kraftfutterautomaten, nun kann ich wieder herumtollen!"
 }];
 
 

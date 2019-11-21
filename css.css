@@ -25,6 +25,10 @@ html{
   font-size:18px;
 }
 
+.source{
+  text-align: left;
+}
+
 .darstellung-titel{
   font-weight: bold;
   font-size: 35px;
