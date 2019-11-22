@@ -1,9 +1,4 @@
 #bigtrail {
-  fill: #7c7c7c;
-}
-
-#bigtrail:hover {
-  fill: blue;
 }
 
 .two {
@@ -19,22 +14,12 @@
 }
 
 #walzplatz {
-  fill: #845630;
-}
-
-#walzplatz:hover {
-  fill: blue;
 }
 
 #weide {
-  fill: #0ce84f;
   stroke: #999;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
-}
-
-#weide:hover {
-  fill: blue;
 }
 
 #gate {
@@ -42,14 +27,6 @@
 }
 
 #gate:hover {
-  fill: blue;
-}
-
-#sonnenplatz {
-  fill: #e5e53e;
-}
-
-#sonnenplatz:hover {
   fill: blue;
 }
 
@@ -76,14 +53,9 @@
 }
 
 #intBox {
-  fill: #6d5e1d;
   stroke: #603b0f;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
-}
-
-#intBox:hover {
-  fill: blue;
 }
 
 #schattenplatz {
@@ -95,25 +67,15 @@
 }
 
 #reithalle {
-  fill: #efce70;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
   stroke: #512803;
-}
-
-#reithalle:hover {
-  fill: blue;
 }
 
 #liegeplatz {
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
   stroke: #512803;
-  fill: #c18c52;
-}
-
-#liegeplatz:hover {
-  fill: blue;
 }
 
 .thirteen {
