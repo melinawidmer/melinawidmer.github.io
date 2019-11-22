@@ -172,7 +172,7 @@ function showanswers() {
   htmlinjection += '<a href ="';
   htmlinjection += whereTo;
   htmlinjection += '" class="btn">';
-  htmlinjection += 'Mehr </a></div>';
+  htmlinjection += 'Mehr dazu </a></div>';
 
 
   document.getElementById("answer").scrollIntoView();

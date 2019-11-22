@@ -47,6 +47,9 @@
           <pattern id="inte" patternUnits="userSpaceOnUse" width="5" height="3">
             <image xlink:href="../images/int.png" x="0" y="0" width="5" height="3"/>
           </pattern>
+          <pattern id="schatt" patternUnits="userSpaceOnUse" width="8" height="8">
+            <image xlink:href="../images/schatten.png" x="0" y="0" width="8" height="8"/>
+          </pattern>
         </defs>
         <path id="bigtrail" class="one"
           d="M38.31,19.09c-8.68-.38-15.06-.36-19.37-.26-1.45,0-4.32.11-8.75.19-4.24.08-7.72.11-10,.13L0,0,33,.38a4,4,0,0,0,0,1.15c0,.29.09.44,0,.58s-.47.19-1,.16c-1.46-.1-1.84-.22-2,0s-.05.31,0,.92V4.72A31.15,31.15,0,0,0,30,8a4.27,4.27,0,0,0,2.32,3.17,7.35,7.35,0,0,0,1.85.1c2,0,3,0,3.16,0,.37,0,.75-.09,1,.13s.09.74,0,1.12a12.08,12.08,0,0,0,0,2.62Z"
@@ -54,7 +57,7 @@
         <path id="walzplatz" class="three" d="M4.77,7h-5a3.35,3.35,0,0,0,0-1V1a3.05,3.05,0,0,0,0-1h2a3.77,3.77,0,0,1,3,1,3.69,3.69,0,0,1,1,2,4.13,4.13,0,0,1,0,2A8.75,8.75,0,0,1,4.77,7Z" transform="translate(0.23 0.13)" fill="#845630"/>
         <rect id="liegeplatz" class="twelve" x="10.57" y="12.53" width="11.34" height="6.43" fill="#c18c52"/>
         <rect id="reithalle" class="eleven" x="21.9" y="11.49" width="16.64" height="7.73" fill="#b07d1e"/>
-        <rect id="schattenplatz" class="ten" x="17.32" y="10.53" width="4.5" height="1.92" />
+        <rect id="schattenplatz" class="ten" x="17.32" y="10.53" width="4.5" height="1.92" fill="#4a4a51"/>
         <rect id="sonnenplatz" class="six" x="16.5" y="0.5" width="13.75" height="7.62" fill="#e5e53e" />
         <rect id="intBox" class="nine" x="30.25" y="0.5" width="3" height="1.73" fill="#6d5e1d" />
         <path id="gate" class="five" d="M16.37,8.12H15.8V6.49h.57Z" transform="translate(0.23 0.13)" />
@@ -75,6 +78,13 @@
           transform="translate(0.23 0.13)" fill="green"/>
       </svg>
       <script type="text/javascript">
+
+
+      $("#schattenplatz").hover(function(){
+        $(this).attr("fill", "url(#schatt)")
+      }, function(){
+        $(this).attr("fill", "#4a4a51")
+      })
 
       $("#intBox").hover(function(){
         $(this).attr("fill", "url(#inte)")

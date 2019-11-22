@@ -37,13 +37,13 @@ html{
 .darstellung-text{
   margin-left: 5px;
   text-align: left;
-  width: 70%;
+  width: 65%;
   margin-right: 10%;
   font-size: 21px;
   word-wrap: break-word;
 }
 .darstellung-content img{
-  width: 15%;
+  width: 30%;
 }
 .darstellung-content{
   display: flex;
