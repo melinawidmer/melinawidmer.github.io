@@ -1,6 +1,6 @@
 var questionlist = [{
   id: "one",
-  question: "Ich möchte mich im Aktivstall fortbewegen!",
+  question: "Ich möchte mich im Aktivstall auf dem Big Trail fortbewegen!",
   title: "BigTrail!",
   beschreibung: "Genau, das ist unser Big Trail!"
 }, {
