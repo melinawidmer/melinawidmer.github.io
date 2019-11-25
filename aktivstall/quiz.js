@@ -1,3 +1,4 @@
+//eine Liste, mit allen fragen, titeln und beschreibungen auf einmal.
 var questionlist = [{
   id: "one",
   question: "Ich möchte mich im Aktivstall auf dem Big Trail fortbewegen!",
@@ -65,9 +66,11 @@ var questionlist = [{
   beschreibung: "Richtig, dass sind unsere Kraftfutterautomaten, nun kann ich wieder herumtollen!"
 }];
 
-
+//macht die Fragezeit falsch was bedeutet questiontime soll später regeln, ob man noch spielen darf oder nicht
 var questiontime = false;
+//wählt ein Element aus der obrigen Liste aus, ist aber im Moment noch gar nichts.
 var questionid = 0;
+//Die Anzahl Leben und somit Herzen.
 var leben = 3;
 
 //Zufallszahl machen
@@ -78,53 +81,80 @@ function randomizer(maximum, minimum) {
 
 //Frage eroieren
 $(function() {
+  //macht questionid die Zufallszahl
   questionid = randomizer(questionlist.length, 0);
+  /*fügt in das element mit der ID question in HTML den text ein,
+  der unter der Liste an der Stelle der Questionid gefunden werden
+  kann und unter dem Argument question zu finden ist..
+  */
   $("#question").text(questionlist[questionid].question)
+  //die Zeit zu antworten ist nun wahr.
   questiontime = true;
+  //ruft die Methode loadLives von unten auf
   loadLives();
 })
 
 //leben erstellen
 function loadLives() {
+  //die injection wird vorbereitet
   var injection = " ";
+  //Für jedes Leben von oben wird das innere gemacht
   for (var i = 0; i < leben; i++) {
+    //das hier wird gemacht
+    //Bilder werden aus dem vorderen Ordner und dem darauffolgenden Ordner images gesucht.
     injection += '<img src="../images/love.png">';
   }
+  //in das Element mit der ID lives wird dieser Text geladen, was dann die Bilder anzeigt
   document.getElementById("lives").innerHTML = injection;
 
 }
 
-
+//Dazu da um auf jedes Element des SVGs Klicken zu können
 $(function() {
   $("#Ebene_1 > path, #Ebene_1 > rect").each(function() {
     $(this).click(function() {
+      //überprüfen ob man überhaupt spielen darf zu diesem Zeitpunkt
       if (questiontime) {
+        //wenn ja dann überprüfen ob der Klassenname des geklickten SVGs der ID der Frage entspricht und somit richtig wäre
         if ($(this).attr("class") == (questionlist[questionid].id)) {
-          //id found
+          //Es ist das richtige
+          //showAnswers Methode von Unten wird ausgeführt
           showanswers();
+          //Man darf nicht mehr auf Elemente drücken.
           questiontime = false;
         } else {
-          //id not found
+          //Es ist das falsche
+          //Ein Leben wird abgezogen
           leben--;
+          //LoadLives Methode von oben wird ausgeführt
           loadLives();
+          //Wenn keine Leben mehr da sind
           if (leben == 0) {
+            //muss Du hast verlorenn dargestellt werden.
             document.getElementById("titel").innerHTML = "Du hast verloren";
           }
         }
       } else {
+        //Wenn man nicht spielen darf wird dieser Alert ausgeführt, das feld , das oben erscheint.
         alert("Drücke erst weiter!");
       }
     })
   })
 })
-
+//show Answers Methdoe
 function showanswers() {
+  //den Link für den Mehr dazu Knopf ist zunächst leer.
   var whereTo = " ";
+  //den Inhalt der questionid überprüfen
   switch (questionid) {
+    //wenn der Inhalt 0 ist
     case 0:
+    //muss der Link auf die BigTrail Seite verweisen
       whereTo = "../bigtrail/index.html";
+      //questionid muss nicht weiter überprüft werden, da es gefudnen wurde und die Schlaufe wird abgebrochen
       break;
     case 1:
+    //usw
       whereTo = "../trinke/index.html";
       break;
     case 2:
@@ -163,19 +193,22 @@ function showanswers() {
     default:
 
   }
-
+ //einfügen in HTML wird vorbereitet, erstellt die beiden Knöpfe Weiter und Mehrdazu
   var htmlinjection = '<div class="box">';
   htmlinjection += '<';
+  //Weiter Knopf Link bleibt leer, was eine Aktualisierung der Seite zur Folge hat und somit eine neue Frage erstellt.
   htmlinjection += 'a href = "" class="btn" style="margin-right:10px;">';
   htmlinjection += 'Weiter';
   htmlinjection += '</a>';
   htmlinjection += '<a href ="';
+  //Der Link für Mehr dazu wird eingefügt
   htmlinjection += whereTo;
   htmlinjection += '" class="btn">';
   htmlinjection += 'Mehr dazu </a></div>';
 
-
+  //Wenn die Antwort stimmt, wird hinunter gescrollt um die Antwort anzuzeigen
   document.getElementById("answer").scrollIntoView();
+  //Die Antworten in HTML laden
   document.getElementById("titel").innerHTML = questionlist[questionid].title;
   document.getElementById("besch").innerHTML = questionlist[questionid].beschreibung;
   document.getElementById("answer").innerHTML = htmlinjection;
